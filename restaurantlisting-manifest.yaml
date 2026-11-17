@@ -51,5 +51,4 @@ spec:
   template:
     spec:
       containers:
-        - image: |-
-            codecode123/restaurantlisting-arm-cicd-github-actions:sha-b20efc0
+        - image: codecode123/restaurantlisting-arm-cicd-github-actions:sha-b20efc0
