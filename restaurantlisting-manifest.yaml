@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
         - name: restaurantlistingapp
-          image: codecode123/restaurantlisting-arm-cicd-github-actions:0.0.1
+          image: |-
+            codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:main
+            codecode123/restaurantlisting-arm-cicd-github-actions:sha-f78a82f
           imagePullPolicy: Always
           ports:
             - containerPort: 9081
@@ -36,7 +38,6 @@ spec:
                 configMapKeyRef:
                   name: configmap
                   key: restaurantdb_url
-
 ---
 apiVersion: v1
 kind: Service
@@ -49,3 +50,9 @@ spec:
       targetPort: 9081
   selector:
     app: restaurantlistingapp
+  template:
+    spec:
+      containers:
+        - image: |-
+            codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:main
+            codecode123/restaurantlisting-arm-cicd-github-actions:sha-f78a82f
