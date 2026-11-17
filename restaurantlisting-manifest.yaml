@@ -16,9 +16,7 @@ spec:
     spec:
       containers:
         - name: restaurantlistingapp
-          image: |-
-            codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:main
-            codecode123/restaurantlisting-arm-cicd-github-actions:sha-8877452
+          image: codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:sha-6c9da8a
           imagePullPolicy: Always
           ports:
             - containerPort: 9081
@@ -54,5 +52,4 @@ spec:
     spec:
       containers:
         - image: |-
-            codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:main
-            codecode123/restaurantlisting-arm-cicd-github-actions:sha-8877452
+            codecode123/restaurantlisting-arm-cicd-github-actions:codecode123/restaurantlisting-arm-cicd-github-actions:sha-6c9da8a
