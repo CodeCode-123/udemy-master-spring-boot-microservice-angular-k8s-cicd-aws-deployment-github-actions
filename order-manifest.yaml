@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: orderapp
-          image: codecode123/order-arm-cicd:23
+          image: codecode123/order-arm-cicd-github-actions:sha-935748f
           imagePullPolicy: Always
           ports:
             - containerPort: 9084
@@ -28,7 +28,6 @@ spec:
                   key: orderdb_url
             - name: SPRING_DATA_MONGODB_DATABASE
               value: "orderdb"
-
 ---
 apiVersion: v1
 kind: Service
