@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: foodcatalogueapp
-          image: codecode123/foodcatalogue-arm-cicd-github-actions:sha-60a3e3f
+          image: codecode123/foodcatalogue-arm-cicd-github-actions:sha-f3b79c4
           imagePullPolicy: Always
           ports:
             - containerPort: 9082
