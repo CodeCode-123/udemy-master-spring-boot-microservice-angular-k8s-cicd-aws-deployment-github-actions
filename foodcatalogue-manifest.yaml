@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: foodcatalogueapp
-          image: codecode123/foodcatalogue-arm-cicd-github-actions:0.0.1
+          image: codecode123/foodcatalogue-arm-cicd-github-actions:sha-60a3e3f
           imagePullPolicy: Always
           ports:
             - containerPort: 9082
@@ -36,7 +36,6 @@ spec:
                 configMapKeyRef:
                   name: configmap
                   key: foodcataloguedb_url
-
 ---
 apiVersion: v1
 kind: Service
