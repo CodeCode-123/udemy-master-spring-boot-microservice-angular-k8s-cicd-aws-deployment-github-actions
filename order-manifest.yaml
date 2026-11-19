@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: orderapp
-          image: codecode123/order-arm-cicd-github-actions:sha-935748f
+          image: codecode123/order-arm-cicd-github-actions:sha-5c94ec2
           imagePullPolicy: Always
           ports:
             - containerPort: 9084
