@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: angular-app-container
-          image: codecode123/food-delivery-app-fe-arm-cicd-github-actions:sha-1b25798
+          image: codecode123/food-delivery-app-fe-arm-cicd-github-actions:sha-8d2e41b
           imagePullPolicy: Always
           ports:
             - containerPort: 80
