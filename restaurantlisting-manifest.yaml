@@ -48,7 +48,3 @@ spec:
       targetPort: 9081
   selector:
     app: restaurantlistingapp
-  template:
-    spec:
-      containers:
-        - image: codecode123/restaurantlisting-arm-cicd-github-actions:sha-b20efc0
